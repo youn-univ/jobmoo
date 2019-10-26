@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteActivity">
+
+
+    <EditText
+        android:id="@+id/TextTitle"
+        android:layout_width="378dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:ems="18"
+        android:inputType="textPersonName"
+        android:text="제목:&#160;"
+        android:textSize="25dp"
+        android:privateImeOptions="defaultInputmode=korean"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Spinner
+        android:id="@+id/SpinnerHour"
+        android:entries="@array/시"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/TextHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <Spinner
+        android:id="@+id/SpinnerMin"
+        android:entries="@array/분"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/TextMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <Spinner
+        android:id="@+id/SpinnerPlace1"
+        android:entries="@array/장소"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="170dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/TextPlace1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="170dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <Spinner
+        android:id="@+id/SpinnerPlace2"
+        android:entries="@array/장소"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="240dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/TextPlace2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="240dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+    <EditText
+        android:id="@+id/EditCost"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:hint="cost"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="310dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <EditText
+        android:id="@+id/EditClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:text="마감(분): +"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="135dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/EditDetail"
+        android:layout_width="369dp"
+        android:layout_height="167dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/transparent"
+        android:gravity="start"
+        android:hint="업무 상세"
+        android:imeOptions="actionDone"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:maxLines="10"
+        android:minLines="6"
+        android:privateImeOptions="defaultInputmode=korean"
+        android:selectAllOnFocus="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ButtonWrite"
+        android:onClick="askWrite"
+        android:layout_width="95dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="500dp"
+        android:text="글쓰기"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ButtonCancel"
+        android:onClick="cancel"
+        android:layout_width="95dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="500dp"
+        android:text="취소"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
