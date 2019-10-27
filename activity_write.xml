@@ -7,15 +7,24 @@
     tools:context=".WriteActivity">
 
 
-    <EditText
-        android:id="@+id/TextTitle"
-        android:layout_width="378dp"
+    <TextView
+        android:layout_width="80dp"
         android:layout_height="50dp"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
+        android:text="제목 :"
+        android:textSize="25dp"
+        android:privateImeOptions="defaultInputmode=korean"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/TextTitle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
         android:ems="18"
         android:inputType="textPersonName"
-        android:text="제목:&#160;"
         android:textSize="25dp"
         android:privateImeOptions="defaultInputmode=korean"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -114,7 +123,7 @@
         android:hint="cost"
         android:inputType="number"
         android:digits="0123456789"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:gravity="center"
         android:layout_marginTop="65dp"
         android:layout_marginLeft="310dp"
@@ -122,16 +131,25 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
 
-    <EditText
-        android:id="@+id/EditClose"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="8"
-        android:text="마감(분): +"
-        android:inputType="number"
-        android:digits="0123456789"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="135dp"
+        android:text="마감(분):  +"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/EditClose"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:textSize="20dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="125dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
