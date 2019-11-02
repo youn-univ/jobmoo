@@ -112,9 +112,12 @@ public class LoginActivity extends AppCompatActivity {
                 if(task.isSuccessful()){   // task 성공 시
                     finish();
                     Toast.makeText(LoginActivity.this,"성공하였습니다",Toast.LENGTH_SHORT).show();
-
+                    
+                    /*
+                    백그라운드 동작
                     Intent intent1 = new Intent(getApplicationContext(), zMyService.class);
                     startService(intent1);
+                    */
 
                     startActivity(new Intent(LoginActivity.this,MainActivity.class));  //메인액티비티로 넘김
                     finish();
