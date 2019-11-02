@@ -143,41 +143,5 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void questClick(View view){
-        Intent intent = new Intent(this, QuestActivity.class);
-        startActivity(intent);
-    }
-
-
-    public void mOnPopup1 (View v) {
-        Intent intent = new Intent(this, Popup1Activity.class);
-        intent.putExtra("class", "1교시");
-        startActivityForResult(intent, 1);
-    }
-
-    public void mOnPopup2 (View v) {
-        Intent intent = new Intent(this, Popup2Activity.class);
-        startActivityForResult(intent, 1);
-    }
-
-    public void mOnPopup6 (View v) {
-        Intent intent = new Intent(this, Popup6Activity.class);
-        intent.putExtra("class", "2교시");
-        startActivityForResult(intent, 1);
-    }
-
-    public void mOnPopup11 (View v) {
-        Intent intent = new Intent(this, Popup11Activity.class);
-        intent.putExtra("class", "3교시");
-        startActivityForResult(intent, 1);
-    }
-
-    public void mOnPopup16 (View v) {
-        Intent intent = new Intent(this, Popup16Activity.class);
-        intent.putExtra("class", "4교시");
-        startActivityForResult(intent, 1);
-    }
-
-
 
 }
