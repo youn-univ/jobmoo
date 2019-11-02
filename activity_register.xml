@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/android_background2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="이메일"
+            android:id="@+id/email"
+            android:textColorHint="#000000" />
+
+
+        <EditText
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="비밀번호"
+            android:id="@+id/password"
+            android:textColorHint="#000000" />
+
+
+        <Button
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:id="@+id/register"
+            android:background="@drawable/custom_buttun"
+            android:color="@android:color/black"/>
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/textViewLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이미 회원이신가요? '로그인'하기"
+            android:textSize="18sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:text="Registration"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="60sp" />
+
+</RelativeLayout>
