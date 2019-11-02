@@ -25,29 +25,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".QuestActivity" />
-        <activity android:name=".WriteActivity" />
-        <activity
-            android:name=".Popup1Activity"
-            android:theme="@android:style/Theme.Dialog" />
-        <activity
-            android:name=".Popup2Activity"
-            android:theme="@android:style/Theme.Dialog" />
-        <activity
-            android:name=".Popup6Activity"
-            android:theme="@android:style/Theme.Dialog" />
-        <activity
-            android:name=".Popup11Activity"
-            android:theme="@android:style/Theme.Dialog" />
-        <activity
-            android:name=".Popup16Activity"
-            android:theme="@android:style/Theme.Dialog" />
+        
 
-        <service
-            android:name=".zMyService"
-            android:enabled="true"
-            android:exported="true">
-        </service>
+        
     </application>
 
 </manifest>
